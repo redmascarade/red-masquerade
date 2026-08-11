@@ -1873,6 +1873,102 @@
         }
 
 
+    /* =========================================
+   AJUSTE RESPONSIVO — RED MASQUERADE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .container,
+    .content,
+    main,
+    section {
+        max-width: 100%;
+    }
+
+    /* Cards em uma coluna no celular */
+    .intro-grid,
+    .cards-grid,
+    .grid,
+    [style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+    }
+
+    /* Evita títulos enormes saindo da tela */
+    h1 {
+        font-size: clamp(42px, 12vw, 68px) !important;
+        line-height: 0.98 !important;
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+    h2 {
+        font-size: clamp(32px, 9vw, 52px) !important;
+        line-height: 1.05 !important;
+        overflow-wrap: break-word;
+    }
+
+    h3 {
+        font-size: clamp(24px, 7vw, 36px) !important;
+        line-height: 1.1 !important;
+        overflow-wrap: break-word;
+    }
+
+    /* Textos */
+    p {
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    /* Cards */
+    .intro-card,
+    .channel-card,
+    .card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box;
+    }
+
+    /* Conteúdo interno dos cards */
+    .intro-card *,
+    .channel-card *,
+    .card * {
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+    }
+
+    /* Espaçamento lateral */
+    section {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+
+    /* Grids com 2 ou 3 colunas */
+    .intro-card > div,
+    .channel-card > div {
+        min-width: 0 !important;
+    }
+
+    /* Imagens */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+        }
     </style>
 
 </head>
@@ -3441,7 +3537,7 @@
                     style="
                         display:grid;
                         grid-template-columns:
-                            1fr;
+                            repeat(3,minmax(0,1fr));
                         gap:15px;
                     "
                 >
