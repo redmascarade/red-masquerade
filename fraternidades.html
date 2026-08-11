@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
+<title>Fraternidades · Red Masquerade</title>
+
+<link
+  rel="stylesheet"
+  href="style.css"
+>
+
+</head>
+
+<body>
+
+<div class="page">
+
+<header class="site-header">
+
+  <a href="index.html" class="logo">
+
+    <span class="logo-mark"></span>
+
+    <span class="logo-text">
+      RED MASQUERADE
+    </span>
+
+  </a>
+
+  <button
+    class="menu-button"
+    type="button"
+    onclick="toggleMenu()"
+  >
+    <span class="menu-icon">☰</span>
+  </button>
+
+  <nav class="menu" id="menu">
+
+    <a href="index.html">
+      Início
+    </a>
+
+    <a href="fraternidades.html">
+      Fraternidades
+    </a>
+
+    <a href="jornal.html">
+      Jornal
+    </a>
+
+    <a href="eventos.html">
+      Eventos
+    </a>
+
+  </nav>
+
+</header>
+
+
+<main>
+
+<section class="page-title">
+
+  <div class="container">
+
+    <div class="eyebrow">
+      MOSCOW REQUIEM
+    </div>
+
+    <h1>
+      Fraternidades
+    </h1>
+
+    <p>
+      Três casas. Três histórias.
+      Três maneiras diferentes de sobreviver
+      à Universidade Lomonosov.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section class="fraternity-page">
+
+  <div class="container">
+
+    <div class="fraternity-list">
+
+
+      <!-- GOLDEN KNIGHTS -->
+
+      <article class="fraternity-profile">
+
+        <div class="fraternity-image">
+
+          <img
+            src="Golden_Knights_escudo_V2.jpg"
+            alt="Escudo dos Golden Knights"
+          >
+
+        </div>
+
+
+        <div class="fraternity-details">
+
+          <div class="eyebrow">
+            EST. 1907 · MASCULINA
+          </div>
+
+          <h2>
+            Golden Knights
+          </h2>
+
+          <div class="fraternity-motto">
+            Strength &amp; Honor
+          </div>
+
+          <p>
+            Uma fraternidade tradicional de elite,
+            construída sobre lealdade, honra,
+            discrição e hierarquia.
+          </p>
+
+          <div class="fraternity-meta">
+
+            <div class="meta-item">
+
+              <strong>
+                Sede
+              </strong>
+
+              <span>
+                Clube privado de elite em Moscou
+              </span>
+
+            </div>
+
+            <div class="meta-item">
+
+              <strong>
+                Símbolo
+              </strong>
+
+              <span>
+                Leão
+              </span>
+
+            </div>
+
+            <div class="meta-item">
+
+              <strong>
+                Cores
+              </strong>
+
+              <span>
+                Dourado e preto
+              </span>
+
+            </div>
+
+            <div class="meta-item">
+
+              <strong>
+                Entrada
+              </strong>
+
+              <span>
+                Candidatura aberta
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+</div>
+
+<script>
+
+function toggleMenu() {
+
+  const menu =
+    document.getElementById("menu");
+
+  if (menu) {
+    menu.classList.toggle("active");
+  }
+
+}
+
+</script>
+
+</body>
+
+</html>
