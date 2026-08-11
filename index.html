@@ -493,7 +493,7 @@
     font-style: italic;
     line-height: 1.7;
 }
-        /* =========================================================
+/* =========================================================
    AJUSTE DOS ESCUDOS DAS FRATERNIDADES
    ========================================================= */
 
@@ -502,15 +502,18 @@
     flex-direction: column !important;
     justify-content: flex-start !important;
     align-items: stretch !important;
+
+    min-height: 620px !important;
+    padding: 0 28px 35px !important;
 }
 
 .cards .card-symbol {
     position: relative !important;
 
-    width: 100% !important;
-    height: 280px !important;
+    width: calc(100% + 56px) !important;
+    height: 340px !important;
 
-    margin: 0 0 25px 0 !important;
+    margin: 0 -28px 30px !important;
 
     display: flex !important;
     align-items: center !important;
@@ -521,6 +524,8 @@
     flex-shrink: 0 !important;
 
     z-index: 1 !important;
+
+    border-bottom: 1px solid rgba(157, 37, 44, 0.18);
 }
 
 .cards .card-symbol img {
@@ -534,6 +539,12 @@
     object-fit: contain !important;
 
     z-index: 1 !important;
+
+    transition: transform 0.4s ease;
+}
+
+.cards .card:hover .card-symbol img {
+    transform: scale(1.03);
 }
 
 .cards .card h3,
@@ -545,6 +556,9 @@
     flex-shrink: 0 !important;
 }
 
+.cards .card h3 {
+    margin-top: 0 !important;
+}
         /* =========================================================
            RPG
            ========================================================= */
